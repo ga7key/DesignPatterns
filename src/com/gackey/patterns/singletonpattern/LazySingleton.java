@@ -3,7 +3,7 @@
  * copyright:©2018-2020 gackey. All Rights Reserved.
  */
 
-package com.gackey.pattern.singletonpattern;
+package com.gackey.patterns.singletonpattern;
 
 /**
  * Desc: TODO
