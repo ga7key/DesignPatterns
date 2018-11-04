@@ -10,6 +10,7 @@ package com.gackey.patterns.singletonpattern;
  * ClassName: LazySingleton
  * author: gackey
  * date: 2018-11-04 00:21
+ * 
  */
 public class LazySingleton {
 
