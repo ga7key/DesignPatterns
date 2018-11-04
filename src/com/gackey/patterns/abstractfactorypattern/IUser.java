@@ -5,8 +5,6 @@
 
 package com.gackey.patterns.abstractfactorypattern;
 
-import org.omg.PortableInterceptor.USER_EXCEPTION;
-
 /**
  * Desc: TODO
  * ClassName: IUser
