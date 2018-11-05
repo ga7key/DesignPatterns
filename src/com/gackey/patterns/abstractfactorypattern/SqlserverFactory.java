@@ -14,9 +14,15 @@ package com.gackey.patterns.abstractfactorypattern;
 public class SqlserverFactory implements Ifactory {
 
     @Override
-    public IUser createUser() {
-        IUser user = new SqlserverUser();
+    public Iuser createUser() {
+        Iuser user = new SqlserverUser();
         return user;
+    }
+
+    @Override
+    public Iproduct createProduct() {
+        Iproduct product = new SqlserverProduct();
+        return product;
     }
 
 }

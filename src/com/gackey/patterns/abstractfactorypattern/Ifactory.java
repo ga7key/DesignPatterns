@@ -13,5 +13,7 @@ package com.gackey.patterns.abstractfactorypattern;
  */
 public interface Ifactory {
 
-    IUser createUser();
+    Iuser createUser();
+
+    Iproduct createProduct();
 }

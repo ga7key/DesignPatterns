@@ -23,17 +23,31 @@ public class AbstractFactoryTest {
 
     public static void main(String[] args) {
         User user = new User();
+        Product product = new Product();
         // mysql
+        // user
         Ifactory mysqlFactory = new MysqlFactory();
-        IUser mysqlU = mysqlFactory.createUser();
+        Iuser mysqlU = mysqlFactory.createUser();
         mysqlU.insert(user);
         mysqlU.select(1);
+        System.out.println("**********");
+        // product
+        Iproduct mysqlP = mysqlFactory.createProduct();
+        mysqlP.insert(product);
+        mysqlP.select(3);
         System.out.println("---------------------------");
         // sql server
+        // user
         Ifactory sqlserverFactory = new SqlserverFactory();
-        IUser sqlserverU = sqlserverFactory.createUser();
+        Iuser sqlserverU = sqlserverFactory.createUser();
         sqlserverU.insert(user);
         sqlserverU.select(1);
+        System.out.println("**********");
+        // product
+        Iproduct sqlserverP = sqlserverFactory.createProduct();
+        sqlserverP.insert(product);
+        sqlserverP.select(3);
+
     }
 
 }

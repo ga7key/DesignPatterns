@@ -11,7 +11,7 @@ package com.gackey.patterns.abstractfactorypattern;
  * author: gackey
  * date: 2018-11-04 20:09
  */
-public interface IUser {
+public interface Iuser {
 
     void insert(User user);
 

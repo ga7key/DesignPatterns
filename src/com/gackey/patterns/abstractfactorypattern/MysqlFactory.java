@@ -14,9 +14,15 @@ package com.gackey.patterns.abstractfactorypattern;
 public class MysqlFactory implements Ifactory {
 
     @Override
-    public IUser createUser() {
-        IUser user = new MysqlUser();
+    public Iuser createUser() {
+        Iuser user = new MysqlUser();
         return user;
+    }
+
+    @Override
+    public Iproduct createProduct() {
+        Iproduct product = new MysqlProduct();
+        return product;
     }
 
 }
