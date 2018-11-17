@@ -6,7 +6,7 @@
 package com.gackey.patterns.simplefactorypattern;
 
 /**
- * Desc: TODO
+ * Desc: main test
  * ClassName: SimpleFactoryTest
  * author: gackey
  * date: 2018-11-04 15:33
