@@ -1,0 +1,26 @@
+/*
+ * title: ForenoonState.java
+ * copyright:©2018-2020 gackey. All Rights Reserved.
+ */
+
+package com.gackey.patterns.statepattern;
+
+/**
+ * @desc: 上午工作状态类
+ * @className: ForenoonState
+ * @author: gackey
+ * @date: 2018-12-01 20:54
+ */
+class ForenoonState extends State {
+
+    @Override
+    public void writeProgram(Work w) {
+        if (w.getHour() < 12) {
+            System.out.println("当前时间：" + w.getHour() + "点 上午工作，精神百倍");
+        } else {
+            w.setCurrent(new NoonState());
+            w.writeProgram();
+        }
+    }
+
+}
